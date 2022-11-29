@@ -38,10 +38,13 @@ donut_proj_path = "donut"
 sys.path.insert(0 ,donut_proj_path)
 
 from train import *
-en_model_path = "model/en_rev_result_overfit_v0"
-zh_model_path = "model/zh_rev_result_overfit"
-assert os.path.exists(en_model_path)
-assert os.path.exists(zh_model_path)
+#en_model_path = "model/en_rev_result_overfit_v0"
+#zh_model_path = "model/zh_rev_result_overfit"
+en_model_path = "svjack/question_generator_by_en_on_pic"
+zh_model_path = "svjack/question_generator_by_zh_on_pic"
+
+#assert os.path.exists(en_model_path)
+#assert os.path.exists(zh_model_path)
 
 from PIL import Image
 
