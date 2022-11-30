@@ -27,7 +27,7 @@ pip install donut-python
 This will help you use them. (you can use git-lfs to download them and use DonutModel.from_pretrained(en_model_path) to init weights as [donut](https://github.com/clovaai/donut) do)
 
 ### One step forward
-In NLP domain, if give you a paragraph, how can you get some questions and their answers from this paragraph, The whole target can be divided into some other blocks.
+In NLP domain, if give you a paragraph, how can you get some questions and their answers from this paragraph, The whole target can be divided into some blocks.
 
 Firstly, determine what kind of questions answers people mainly interested. One common used NLP task answer this problem --- NER, in many topics, people mainly care about Named-entity, so many datasets are constructed centered with NE. So you can extract Named-entity as answers. If the answer come from text, then a native NER is required.
 When it comes to image, This demand met by [PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR)'s [kie module](https://github.com/PaddlePaddle/PaddleOCR/tree/release/2.6/ppstructure/kie) in [PPStructure](https://github.com/PaddlePaddle/PaddleOCR/tree/release/2.6/ppstructure)
