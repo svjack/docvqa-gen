@@ -20,12 +20,8 @@ import pickle as pkl
 from tqdm import tqdm
 from easynmt import EasyNMT
 
-
-#path = "svjack/prompt-extend-chinese"
 ### https://huggingface.co/svjack/squad_gen_qst_zh_v0
-#path = "model/squad_gen_qst_zh_v0"
 path = "svjack/squad_gen_qst_zh_v0"
-#### upload to huggingface
 asker_zh = T5_B(path,
     device = "cpu")
 
