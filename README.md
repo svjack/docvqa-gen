@@ -32,7 +32,7 @@ In NLP domain, if give you a paragraph, how can you get some questions and their
 Firstly, determine what kind of questions answers people mainly interested. One common used NLP task answer this problem --- NER, in many topics, people mainly care about Named-entity, so many datasets are constructed centered with NE. So you can extract Named-entity as answers. If the answer come from text, then a native NER is required.
 When it comes to image, This demand met by [PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR)'s [kie module](https://github.com/PaddlePaddle/PaddleOCR/tree/release/2.6/ppstructure/kie) in [PPStructure](https://github.com/PaddlePaddle/PaddleOCR/tree/release/2.6/ppstructure)
 
-Secondly, use a generator generate question about this answer.
+Secondly, use a generator generate question about this answer.<br/>
 When it comes to image, This have done with the help of [donut](https://github.com/clovaai/donut), But because the variation of dataset, donut question generator may not works when the image construct by some long paragraph. This make the demand about, extract the long paragraph by OCR, and generate question on the paragraph recognize by OCR. In English domain, [text2text](https://github.com/artitw/text2text) deal with it by its Handler, and I release my [svjack/squad_gen_qst_zh_v0](https://huggingface.co/svjack/squad_gen_qst_zh_v0) works for Chinese.
 
 Thirdly, Valid the question generate by a squad style model.
