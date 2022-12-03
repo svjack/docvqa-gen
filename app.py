@@ -22,6 +22,7 @@ demo = gr.Interface(
         outputs="json",
         title=f"DocVQA dataset generate 🍩 demonstration",
         examples=example_sample if example_sample else None,
+        cache_examples = False
     )
 
 demo.launch(server_name=None, server_port=None)
