@@ -27,7 +27,10 @@ pip install donut-python
 This will help you use them. (you can use git-lfs to download them and use DonutModel.from_pretrained(en_model_path) to init weights as [donut](https://github.com/clovaai/donut) do)
 
 ### One step forward
-In NLP domain, if give you a paragraph, how can you get some questions and their answers from this paragraph, The whole target can be divided into some blocks.
+In NLP domain, if give you a paragraph, how can you get some questions and their answers from this paragraph, The whole target can be divided into some blocks.<br/>
+
+Below is the self train and build NLP Example deploy in HuggingFace Space.<br/>
+<b>[Question generate 🍩 demonstration](https://huggingface.co/spaces/svjack/Question-Generator)</b>
 
 Firstly, determine what kind of questions answers people mainly interested. One common used NLP task answer this problem --- NER, in many topics, people mainly care about Named-entity, so many datasets are constructed centered with NE. So you can extract Named-entity as answers. If the answer come from text, then a native NER is required.<br/>
 <b>When it comes to image</b>, This demand met by [PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR)'s [kie module](https://github.com/PaddlePaddle/PaddleOCR/tree/release/2.6/ppstructure/kie) in [PPStructure](https://github.com/PaddlePaddle/PaddleOCR/tree/release/2.6/ppstructure)
@@ -41,8 +44,12 @@ Thirdly, Valid the question generate by a squad style model.<br/>
 After the above discussion, Task of generate questions from paragraph have been promoted to generate questions from document images. And [PaddleNLP](https://github.com/PaddlePaddle/PaddleNLP) and [PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR) give the support about this improve from [donut](https://github.com/clovaai/donut) --- a only generator <b>"One Step Forward"</b>, with its compatibility in English and Chinese. And the dataset generation of DocVQA has done in the
 theoretical point of view.
 
-### Full Installtion
+### Fully Installtion
 If someone want to use the function of "One step forward" to generate questions and answers from Document image, other than [donut](https://github.com/clovaai/donut) you should also install model to perform NER (here i choose [spacy](https://github.com/explosion/spaCy)) [PaddleNLP](https://github.com/PaddlePaddle/PaddleNLP) and [PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR) and download some require models to local. For simplify the install process, in the [notebook.ipynb](notebook.ipynb), it integrated the every Installtion steps and run demo in a tiny jupyter notebook. You can run this notebook in any well telecommunication notebook server (as Kaggle Colab or your local jupyter server)
+
+### Example deploy in Huggingface Space (without Validation in above Third step)
+<b>[Question generate on Document Image 🍩 demonstration](https://huggingface.co/spaces/svjack/Question-Generator-On-Documnet-Image)</b>
+
 
 ### Examples
 Because the paths are fixed in the project. All functions to check the examples should be run in the root dir of the project.
