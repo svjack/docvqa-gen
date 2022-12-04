@@ -170,7 +170,11 @@ svjack - svjackbt@gmail.com - ehangzhou@outlook.com
 <!--
 Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
 -->
-Project Link:[https://github.com/svjack/docvqa-gen](https://github.com/svjack/docvqa-gen)
+Project Link:[https://github.com/svjack/docvqa-gen](https://github.com/svjack/docvqa-gen)<br/>
+
+HuggingFace Space Link:<br/>
+[https://huggingface.co/spaces/svjack/Question-Generator-On-Documnet-Image](https://huggingface.co/spaces/svjack/Question-Generator-On-Documnet-Image)<br/>
+[https://huggingface.co/spaces/svjack/Question-Generator](https://huggingface.co/spaces/svjack/Question-Generator)
 
 
 <!-- ACKNOWLEDGEMENTS -->
