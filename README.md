@@ -32,6 +32,22 @@ In NLP domain, if give you a paragraph, how can you get some questions and their
 Below is the self train and build NLP Example deploy in HuggingFace Space.<br/>
 <b>[Question generate 🍩 demonstration](https://huggingface.co/spaces/svjack/Question-Generator)</b>
 
+#### Question generate on Paragraph Results illustration
+<table><caption></caption>
+<tbody>
+<tr>
+<td>Image</td>
+<td><img src="imgs/en_nlp_input.png" alt="Girl in a jacket" width="450" height="150"></td>
+<td><img src="imgs/zh_nlp_input.png" alt="Girl in a jacket" width="450" height="150"></td>
+</tr>
+<tr>
+<td>Question Answer From Above pics</td>
+<td><img src="imgs/en_nlp_output.png" alt="Girl in a jacket" width="450" height="450"></td>
+<td><img src="imgs/zh_nlp_output.png" alt="Girl in a jacket" width="450" height="450"></td>
+</tr>
+</tbody>
+</table>
+
 Firstly, determine what kind of questions answers people mainly interested. One common used NLP task answer this problem --- NER, in many topics, people mainly care about Named-entity, so many datasets are constructed centered with NE. So you can extract Named-entity as answers. If the answer come from text, then a native NER is required.<br/>
 <b>When it comes to image</b>, This demand met by [PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR)'s [kie module](https://github.com/PaddlePaddle/PaddleOCR/tree/release/2.6/ppstructure/kie) in [PPStructure](https://github.com/PaddlePaddle/PaddleOCR/tree/release/2.6/ppstructure)
 
@@ -45,13 +61,34 @@ After the above discussion, Task of generate questions from paragraph have been 
 theoretical point of view.
 
 ### Fully Installtion
-If someone want to use the function of "One step forward" to generate questions and answers from Document image, other than [donut](https://github.com/clovaai/donut) you should also install model to perform NER (here i choose [spacy](https://github.com/explosion/spaCy)) [PaddleNLP](https://github.com/PaddlePaddle/PaddleNLP) and [PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR) and download some require models to local. For simplify the install process, in the [notebook.ipynb](notebook.ipynb), it integrated the every Installtion steps and run demo in a tiny jupyter notebook. You can run this notebook in any well telecommunication notebook server (as Kaggle Colab or your local jupyter server)
+If someone want to use the function of "One step forward" to generate questions and answers from Document image, other than [donut](https://github.com/clovaai/donut) you should also install model to perform NER (here i choose [spacy](https://github.com/explosion/spaCy)) [PaddleNLP](https://github.com/PaddlePaddle/PaddleNLP) and [PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR) and download some require models to local. For simplify the install process, in the [notebook.ipynb](notebook.ipynb), it integrated the every Installtion steps and run demo in a tiny jupyter notebook. You can run this notebook in any well telecommunication notebook server (as Kaggle Colab or your local jupyter server)<br/>
+Or you can install python packages by requiremnets.txt by 
+```bash
+pip install -r requirements.txt
+```
+and run apt-get install to the packages in packages.txt download [svjack/question_generator_by_zh_on_pic](https://huggingface.co/svjack/question_generator_by_zh_on_pic) and [svjack/question_generator_by_en_on_pic](https://huggingface.co/svjack/question_generator_by_en_on_pic).
+
 
 ### Example deploy in Huggingface Space (without Validation in above Third step)
 <b>[Question generate on Document Image 🍩 demonstration](https://huggingface.co/spaces/svjack/Question-Generator-On-Documnet-Image)</b>
 
+#### Question generate on Document Image Results illustration
+<table><caption></caption>
+<tbody>
+<tr>
+<td>Image</td>
+<td><img src="imgs/en_img.png" alt="Girl in a jacket" width="450" height="450"></td>
+<td><img src="imgs/zh_img.png" alt="Girl in a jacket" width="450" height="450"></td>
+</tr>
+<tr>
+<td>Question Answer From Above pics</td>
+<td><img src="imgs/en_output.png" alt="Girl in a jacket" width="450" height="450"></td>
+<td><img src="imgs/zh_output.png" alt="Girl in a jacket" width="450" height="450"></td>
+</tr>
+</tbody>
+</table>
 
-### Examples
+### Mannully Examples
 Because the paths are fixed in the project. All functions to check the examples should be run in the root dir of the project.
 And i suggest to run [notebook.ipynb](notebook.ipynb) to finish the Installtion before check the examples.
 check [imgs](imgs) content, before use them.
