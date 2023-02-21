@@ -4,7 +4,8 @@ easynmt
 paddlepaddle==2.2.0
 paddlenlp
 paddleocr
-opencv-python
+#opencv-python
+opencv-python==4.6.0.66
 datasets
 Polygon3
 sconf
