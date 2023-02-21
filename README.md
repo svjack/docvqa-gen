@@ -70,7 +70,10 @@ and run apt-get install to the packages in packages.txt download [svjack/questio
 
 
 ### Example deploy in Huggingface Space (without Validation in above Third step)
+
+<!--
 <b>[Question generate on Document Image 🍩 demonstration](https://huggingface.co/spaces/svjack/Question-Generator-On-Documnet-Image)</b>
+-->
 
 #### Question generate on Document Image Results illustration
 <table><caption></caption>
