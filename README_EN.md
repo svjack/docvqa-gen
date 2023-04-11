@@ -9,6 +9,8 @@
   </p>
 </p>
 
+[中文介绍](README.md)
+
 ### Brief introduction
 Nowadays, many question answering framework provide a function about make customize dataset generation to give a support of training model in the data dimension. For example, [primeqa](https://github.com/primeqa/primeqa) provide many toolkits about every kinds of question generation which its Multilingual Question Generation: Supports generation of questions for effective domain adaptation over tables and multilingual text. And [PaddleNLP](https://github.com/PaddlePaddle/PaddleNLP/tree/develop/examples/question_generation/unimo-text) also implement this function in Chinese NLP domain. Tracing the source, they may get inspiration from some frameworks like [text2text](https://github.com/artitw/text2text). And i also draw this idea from text2text in the early of 2022.4<br/>
 As [PaddleNLP](https://github.com/PaddlePaddle/PaddleNLP/tree/develop/examples/question_generation/unimo-text) have release this function in not long ago, i think its time to release a demo project about promote this function to [OCR field](https://en.wikipedia.org/wiki/Optical_character_recognition), And give a interface about generate questions on image. This is the data composition of [DocVQA task](https://www.docvqa.org)
@@ -213,7 +215,9 @@ Project Link: [https://github.com/your_username/repo_name](https://github.com/yo
 Project Link:[https://github.com/svjack/docvqa-gen](https://github.com/svjack/docvqa-gen)<br/>
 
 HuggingFace Space Link:<br/>
+<!--
 [https://huggingface.co/spaces/svjack/Question-Generator-On-Documnet-Image](https://huggingface.co/spaces/svjack/Question-Generator-On-Documnet-Image)<br/>
+-->
 [https://huggingface.co/spaces/svjack/Question-Generator](https://huggingface.co/spaces/svjack/Question-Generator)
 
 
