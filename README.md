@@ -106,6 +106,14 @@ pip install -r requirements.txt
 </tbody>
 </table>
 
+## HuggingFace 展示
+
+### 模型展示
+|名称 |HuggingFace 模型链接| HuggingFace 空间链接 | 语言 |
+|---------|--------|-------|-------|
+| 英文图片文档问题生成器 🦅| https://huggingface.co/svjack/question_generator_by_en_on_pic | https://huggingface.co/spaces/svjack/Question-Generator-on-English-Doc | English |
+| 中文图片文档问题生成器 🐰| https://huggingface.co/svjack/question_generator_by_zh_on_pic | https://huggingface.co/spaces/svjack/Question-Generator-on-Chinese-Doc | Chinese |
+
 
 ### 手动运行的例子
 因为在项目中路径是固定的，所以所有检查示例的函数都应该在项目的根目录中运行。
