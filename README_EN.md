@@ -24,6 +24,9 @@ But this does not affect the convenience to use [donut](https://github.com/clova
 ### Minimize Installtion
 If someone only want to use the trained [donut](https://github.com/clovaai/donut) model to generate questions in a image. I have upload a early stopped version of them to huggingface hub in English and Chinese domains respectively. You can download them from [svjack/question_generator_by_zh_on_pic](https://huggingface.co/svjack/question_generator_by_zh_on_pic) and [svjack/question_generator_by_en_on_pic](https://huggingface.co/svjack/question_generator_by_en_on_pic) and simply install  [donut](https://github.com/clovaai/donut) by
 ```bash
+pip install torch 
+pip install transformers==4.11.3
+pip install opencv-python==4.6.0.66
 pip install donut-python
 ```
 This will help you use them. (you can use git-lfs to download them and use DonutModel.from_pretrained(en_model_path) to init weights as [donut](https://github.com/clovaai/donut) do)
