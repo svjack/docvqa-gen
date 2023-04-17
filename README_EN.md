@@ -96,6 +96,14 @@ and run apt-get install to the packages in packages.txt download [svjack/questio
 </tbody>
 </table>
 
+## HuggingFace demo
+
+### model demo
+|Name |HuggingFace model link| HuggingFace space link | Language |
+|---------|--------|-------|-------|
+| Question Generator from English Document Image 🦅| https://huggingface.co/svjack/question_generator_by_en_on_pic | https://huggingface.co/spaces/svjack/Question-Generator-on-English-Doc | English |
+| Question Generator from Chinese Document Image 🐰| https://huggingface.co/svjack/question_generator_by_zh_on_pic | https://huggingface.co/spaces/svjack/Question-Generator-on-Chinese-Doc | Chinese |
+
 ### Mannully Examples
 Because the paths are fixed in the project. All functions to check the examples should be run in the root dir of the project.
 And i suggest to run [notebook.ipynb](notebook.ipynb) to finish the Installtion before check the examples.
