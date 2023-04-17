@@ -26,6 +26,9 @@
 如果有人只想使用训练好的[donut](https://github.com/clovaai/donut)模型在图像上生成问题。我已经将它们的训练早期停止版本分别上传到了HuggingFace hub的英文和中文领域。您可以从[svjack/question_generator_by_zh_on_pic](https://huggingface.co/svjack/question_generator_by_zh_on_pic)和[svjack/question_generator_by_en_on_pic](https://huggingface.co/svjack/question_generator_by_en_on_pic)下载它们，然后通过以下命令安装[donut](https://github.com/clovaai/donut)：<br/>
 
 ```bash
+pip install torch 
+pip install transformers==4.11.3
+pip install opencv-python==4.6.0.66
 pip install donut-python
 ```
 
